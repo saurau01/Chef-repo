@@ -27,7 +27,7 @@ describe file ('/opt/tomcat') do
   it {should be_directory}
   it { should be_owned_by 'tomcat'}
 end
-end
+
 describe user ('tomcat') do
   it {should exist}
   its ('group') {should eq 'tomcat'}

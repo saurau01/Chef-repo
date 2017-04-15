@@ -14,6 +14,14 @@ user 'tomcat' do
      home '/opt/tomcat'
 end
 
+remote_file '/opt/tomcat/apache-tomcat-8.0.43.tar.gz' do
+     source 'http://mirror.fibergrid.in/apache/tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz'
+     action :create
+     group 'tomcat'
+     owner 'tomcat'
+end
+     
+
 
 
 # end

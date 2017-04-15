@@ -38,3 +38,8 @@ end
 describe group('tomcat') do
   it {should exist}
 end
+describe service('tomcat') do
+  it {should be_installed}
+  it {should be_enabled}
+  it {should be_running}
+end
